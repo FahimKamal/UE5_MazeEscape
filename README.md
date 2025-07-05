@@ -74,21 +74,15 @@ Below is the conceptual map that guides the construction of the "Blackout Facili
 
 ---
 
-## ✨ Key Goals & Features (To Be Achieved with Blueprints)
+## ✨ Key Goals & Features (Implemented & Planned)
 
-*   🔩 **Robust Interaction System:** A flexible, interface-driven system (`BPI_Interact`) allows the player to seamlessly interact with any puzzle element in the world.
-*   🔑 **"Keychain" Inventory System:** A lightweight actor component (`AC_InventorySystem`) manages puzzle-critical items without needing a complex UI, enabling automatic key-and-lock mechanics.
-*   🔦 **Dynamic Player Abilities:** Core mechanics like a toggleable flashlight, crouching, and sprinting are implemented on the player character.
-*   💡 **Environmental State Changes:** A major, level-wide lighting shift occurs when the player solves the generator puzzle, transforming the gameplay environment from dark and suspenseful to bright and clinical.
-*   🧩 **Diverse Puzzle Mechanics:** The game will feature a variety of puzzles built with Blueprints, directly reflecting the course content:
-    *   **Physics-Based:** Pushing objects to reveal paths.
-    *   **Triggers:** Hidden pressure plates that alter the environment.
-    *   **Item Placement:** Using collected "Fusion Cores" to power a machine.
-    *   **Timed Events:** A door that stays open for a limited time.
-    *   **Sequence Puzzles:** Levers that must be pulled in a specific order.
-*   📄 **GDD Adherence:** The gameplay systems and level flow from the GDD are to be fully translated into a playable, interactive 3D game.
-*   🖥️ **Minimalist UI/HUD:** Contextual interaction prompts and temporary item notifications (`UMG Widgets`) provide necessary feedback without cluttering the screen.
-*   📦 **Complete Game Loop:** The project will be a complete, packaged game with a start menu, a win condition, and a clear beginning and end.
+*   🔩 **Optimized Interaction System:** A flexible, interface-driven system allows the player to interact with puzzle elements. It uses a **custom "Interaction" trace channel** and a forward line trace from the player camera for efficiency.
+*   🧰 **Stacking Inventory System:** A lightweight actor component manages puzzle-critical items. The system is being built to stack items (e.g., collecting multiple keys increases a counter) and consume them as they are used.
+*   🔦 **Centralized Lighting Control:** A single `Light Controller` Blueprint manages the entire facility's illumination. This allows for dramatic, level-wide state changes, such as activating all lights when the main generator is repaired.
+*   💡 **Dynamic Door System:** Doors are highly interactive with multiple states. They can be locked, unlocked via a key (which is consumed from inventory), or unlocked via a remote button. A visual indicator light (Red for locked, Green for unlocked) provides clear player feedback.
+*   ⚙️ **Multi-Stage Generator Puzzle:** The main puzzle requires the player to find 3 `Fusion Cells` and install them into a custom-modeled Power Generator. The generator itself has emissive materials that glow when active, providing visual confirmation of its status.
+*   🏛️ **Inheritance-Based Collectibles:** A master `BP_CollectibleItem` class serves as a parent for all pickup items, with children like `BP_Key` and `BP_FusionCell` inheriting its base functionality.
+*   ⏳ **Timed Event Puzzles:** A planned trap door puzzle will require the player to press a button and race to the door before it closes, testing their speed and awareness.
 
 ---
 
@@ -127,47 +121,46 @@ This section will showcase the certificate earned upon successful completion of 
 *   **Engine:** Unreal Engine 5.x ⚙️
 *   **Core Assets Utilized:**
     *   **Unreal Engine First-Person Template:** Used as the base for player character and movement.
-    *   **No external assets:** All puzzle logic and gameplay systems are built from scratch with Blueprints.
+    *   **Custom Models:** Power Generator modeled by the developer.
 *   **Unreal Engine Features Used:**
     *   Blueprint Visual Scripting (Actors, Actor Components, Game Mode)
+    *   **Blueprint Inheritance** (for collectible items)
     *   Blueprint Interfaces (for interaction)
+    *   **Custom Trace Channels** (for optimized interaction)
     *   Event-Driven Programming & Timers
-    *   Line Traces (for interaction detection)
+    *   Line Traces
     *   UMG (Unreal Motion Graphics) for HUD and Widgets
-    *   Physics Actors & Collision (Triggers)
-    *   Basic Lighting & Level Design Tools
+    *   Material Editor (for emissive indicators)
     *   Project Packaging/Build System
 *   **Design Document:** [Game Design Document (GDD) for "Blackout Facility"](./Game Design Document Blackout Facility.pdf)
 *   **Course:** [Blueprint Scripting](https://www.coursera.org/learn/blueprint-scripting?specialization=epic-games-game-design-professional-certificate) (Epic Games / Coursera)
-*   **Version Control:** GitHub ([YOUR GITHUB REPO URL HERE])
+*   **Version Control:**[ GitHub ](https://github.com/FahimKamal/UE5_MazeEscape)
 *   **Documentation:** Markdown (for this README)
 
 ---
 
-## 📊 Project Status (As of July 4, 2025)
+## 📊 Project Status (As of July 5, 2025)
 
-*   ✅ **Project Definition & Foundation:** Scope defined in the GDD. Project initialized using the UE First-Person Template.
-*   ⏳ **Implement Core Player Mechanics:** Flashlight, Crouch, Sprint functionality.
-*   ⏳ **Build Core Gameplay Systems:**
-    *   `BPI_Interact` Interface.
-    *   `AC_InventorySystem` Component.
-*   🔲 **Greybox & Implement Floor 1:**
-    *   Blockout layout for Rooms 1-A, 1-B, 1-C, 1-D.
-    *   Implement Maintenance Key & Door puzzle.
-    *   Implement Hidden Pressure Plate puzzle.
-    *   Implement Timed Door puzzle.
-    *   Implement Generator & Fusion Core puzzle.
-*   🔲 **Greybox & Implement Floor 2:**
-    *   Blockout layout for Rooms 2-A, 2-B, 2-C, 2-D.
-    *   Implement Lever Sequence puzzle.
-    *   Implement crouch/platforming puzzle.
-    *   Implement final pressure plate puzzle.
-    *   Implement the final "Escape Beacon" win condition.
-*   🔲 **UI & Menus:** Create Main Menu and Pause Menu.
-*   🔲 **Audio Pass:** Add placeholder sound effects for key interactions.
-*   🔲 **Playtesting & Iteration:** Test for bugs, puzzle clarity, and game flow.
-*   🔲 **Finalize Project:** Create packaged build, record gameplay video, and submit.
-*   🔲 **Receive Course Certificate:** Complete the course.
+*   ✅ **Core Systems Implemented:**
+    *   **Input:** WASD Movement, F for Flashlight, E for Interaction are all functional.
+    *   **Interaction:** Line trace system using a custom "Interaction" trace channel is complete.
+    *   **Lighting:** Central `Light Controller` is built. It correctly starts the level dark (with some flickering lights) and can turn on all lights on command.
+    *   **Collectible Base:** `BP_CollectibleItem` parent class and its children (`BP_Key`, `BP_FusionCell`) are created.
+
+*   ✅ **Puzzle Elements & Mechanics Implemented:**
+    *   **Door System:** Fully functional `BP_Door` with lock/unlock states, key requirement logic, remote button activation, and a Red/Green indicator light.
+    *   **Generator System:** The custom-modeled Power Generator is in the level. The logic to collect 3 Fusion Cells and activate it to trigger the `Light Controller` is complete.
+
+*   ⏳ **Currently In Progress:**
+    *   **Inventory System:** Developing the logic for items to "stack" (increasing/decreasing a number count) within the player's inventory component.
+    *   **Inventory UI:** Planning a simple UMG widget to display the name and quantity of collected items.
+
+*   🔲 **Next Steps / To-Do:**
+    *   **Elevator System:** Build the elevator actor, its movement logic, and link its activation to the generator being powered on.
+    *   **Timed Door Puzzle:** Implement the timed "trap door" that requires the player to sprint to it before it closes.
+    *   **Floor 2:** Design, greybox, and implement the puzzles for the second floor.
+    *   **UI & Menus:** Create the Main Menu and Pause Menu.
+    *   **Audio Pass:** Add placeholder sound effects for key interactions.
 
 ---
 
@@ -176,11 +169,10 @@ This section will showcase the certificate earned upon successful completion of 
 This project is designed to build and demonstrate proficiency in:
 
 *   **Blueprint Scripting Fundamentals:** Mastering the creation and use of variables, functions, macros, and flow control.
-*   **Event-Driven & Object-Oriented Principles:** Creating self-contained, reusable Blueprints that communicate effectively.
-*   **Robust Interaction Design:** Building a scalable interaction system using Blueprint Interfaces.
+*   **Event-Driven & Object-Oriented Principles:** Creating self-contained, reusable Blueprints that communicate effectively, highlighted by the use of **Blueprint Inheritance** for items.
+*   **Robust Interaction Design:** Building a scalable and **optimized** interaction system using Blueprint Interfaces and custom trace channels.
 *   **Gameplay Systems Architecture:** Designing and implementing core systems like an inventory and stateful puzzles.
-*   **Problem Solving:** Translating GDD requirements into functional, logical code within the Blueprint system.
-*   **UI/UX Implementation:** Using UMG to provide essential player feedback.
+*   **State Management:** Effectively managing the state of the entire game world through a centralized controller (like the `Light Controller`).
 *   **Full Project Lifecycle:** Taking a game from a design document through development, testing, and final packaging.
 
 ---
@@ -203,6 +195,7 @@ Once the course requirements are met, this project could be enhanced for a portf
 *   **Core Assets Utilized in this Project:**
     *   **Unreal Engine First-Person Template:** Provided by Epic Games, Inc., and subject to the Unreal Engine EULA.
 *   **Creator (Game Design, Level Design, Blueprint Scripting):** Fahim Kamal Ahmed
+*   **Custom Models:** The Power Generator asset was modeled by Fahim Kamal Ahmed.
 
 ---
 
