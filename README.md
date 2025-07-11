@@ -15,7 +15,7 @@
 -->
 
 <p align="center">
-  <img src="https://placehold.co/1280x720/001F3F/7FDBFF.png?text=Blackout+Facility\nHero+Image&font=montserrat" alt="Blackout Facility - Hero Image" width="80%"/>
+  <img src="https://github.com/user-attachments/assets/2df6ed67-64aa-431f-8ff4-c0551f9ee868" alt="Blackout Facility - Hero Image" width="80%"/>
   <br>
   <em>A representative hero image of the completed "Blackout Facility."</em>
 </p>
@@ -24,7 +24,7 @@
   <br>
   <em>Playtesting Video of the completed "Blackout Facility" game.</em>
   <!-- TODO: Replace this with a link to YOUR playtesting video once recorded! -->
-  <a href="[YOUR YOUTUBE VIDEO URL HERE]" target="_blank">
+  <a href="https://www.youtube.com/watch?v=P9MyNKpGvYM&t=732s" target="_blank">
     Watch the Full Gameplay Showcase on YouTube.
   </a>
 </p>
