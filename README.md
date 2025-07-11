@@ -24,7 +24,7 @@
   <br>
   <em>Playtesting Video of the completed "Blackout Facility" game.</em>
   <!-- TODO: Replace this with a link to YOUR playtesting video once recorded! -->
-  <a href="https://www.youtube.com/watch?v=P9MyNKpGvYM&t=732s" target="_blank">
+  <a href="https://youtu.be/P9MyNKpGvYM?si=p5N358MyeFH3Fjp5" target="_blank">
     Watch the Full Gameplay Showcase on YouTube.
   </a>
 </p>
@@ -97,11 +97,11 @@ Below are the conceptual maps that guided the construction of each floor in the 
 I am proud to have successfully completed the "Blueprint Scripting" course and earned my certificate!
 
 <p align="center">
-  <img src="https://placehold.co/1000x700/F5F5DC/B8860B.png?text=Certificate+of+Completion\nBlueprint+Scripting&font=playfairdisplay" alt="Certificate for Blueprint Scripting" width="70%"/>
+  <img src="https://github.com/user-attachments/assets/4a1838da-5a43-410f-a786-5687214586b2" alt="Certificate for Blueprint Scripting" width="70%"/>
   <br>
   <em>Certificate of Completion - Blueprint Scripting.</em>
   <br>
-  <a href="[YOUR COURSERA VERIFICATION URL HERE]" target="_blank">
+  <a href="https://coursera.org/verify/O1VRBB9UFBXR" target="_blank">
     <strong>Verify Certificate</strong>
   </a>
 </p>
@@ -110,12 +110,24 @@ I am proud to have successfully completed the "Blueprint Scripting" course and e
 
 ## 📸 Development Screenshots (Completed Project)
 
+
+<img width="2560" height="1392" alt="HighresScreenshot00005" src="" />
+
+
+
+
 <p align="center">
-  <img src="https://placehold.co/600x338/2d2d2d/eeeeee.png?text=Screenshot+1:\nDark+Facility+View&font=roboto" alt="Dark Facility Screenshot" width="45%"/>
-  <img src="https://placehold.co/600x338/2d2d2d/eeeeee.png?text=Screenshot+2:\n'Power+On'+Event&font=roboto" alt="'Power On' Event Screenshot" width="45%"/>
+  <img src="https://github.com/user-attachments/assets/23662322-1e44-43a3-b4c0-fe230c8dcfaf" alt="Storage Room Screenshot" width="80%"/>
   <br/>
-  <img src="https://placehold.co/600x338/2d2d2d/eeeeee.png?text=Screenshot+3:\nAutomated+Elevator&font=roboto" alt="Automated Elevator Screenshot" width="45%"/>
-  <img src="https://placehold.co/600x338/2d2d2d/eeeeee.png?text=Screenshot+4:\nFinal+Objective&font=roboto" alt="Final Objective Screenshot" width="45%"/>
+  <img src="https://github.com/user-attachments/assets/d41b3fc1-f2c6-48bd-b8ba-df7767ba3736" alt="'Power On' Event Screenshot" width="45%"/>
+  <img src="https://github.com/user-attachments/assets/05990c2c-efe0-4f84-8d31-515faee9f002" width="45%"/>
+  <br/>
+  <img src="https://github.com/user-attachments/assets/bf9bdbc3-1d9c-4659-838c-bd5be3023b30" alt="Automated Elevator Screenshot" width="45%"/>
+  <img src="https://github.com/user-attachments/assets/3967cd0c-eab3-49c2-9a3c-632d210171ed" alt="Final Objective Screenshot" width="45%"/>
+  <br/>
+  <img src="https://github.com/user-attachments/assets/326a989a-ec5d-48f7-aaba-3e9443aba9ce" alt="Automated Elevator Screenshot" width="45%"/>
+  <img src="https://github.com/user-attachments/assets/381ee507-f7e7-4649-bba4-a4d9ae3b55a8" alt="Final Objective Screenshot" width="45%"/>
+  <br/>
 </p>
 
 ---
