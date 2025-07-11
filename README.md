@@ -15,7 +15,7 @@
 -->
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/2df6ed67-64aa-431f-8ff4-c0551f9ee868" alt="Blackout Facility - Hero Image" width="80%"/>
+  <img src="https://github.com/user-attachments/assets/3405319c-a441-49cf-91dd-64fb418caff2" alt="Blackout Facility - Hero Image" width="80%"/>
   <br>
   <em>A representative hero image of the completed "Blackout Facility."</em>
 </p>
@@ -67,13 +67,13 @@ The entire design philosophy, detailed puzzle flow, gameplay mechanics, and narr
 Below are the conceptual maps that guided the construction of each floor in the "Blackout Facility."
 
 <p align="center">
-  <img src="https://placehold.co/800x600/E8E8E8/333333.png?text=Floor+1+Map\nIndustrial+Zone&font=roboto" alt="Floor 1 Map" width="75%"/>
+  <img src="https://github.com/user-attachments/assets/80f77504-e7a5-494c-a717-92791f98c37e" alt="Floor 1 Map" width="75%"/>
   <br>
   <em>Top-down conceptual map of Floor 1: The Industrial Zone.</em>
 </p>
 
 <p align="center">
-  <img src="https://placehold.co/800x600/E8E8E8/333333.png?text=Floor+2+Map\nCorporate+Offices&font=roboto" alt="Floor 2 Map" width="75%"/>
+  <img src="https://github.com/user-attachments/assets/6799bb9b-e1eb-4a1c-ad85-4a999ac8f82d" alt="Floor 2 Map" width="75%"/>
   <br>
   <em>Top-down conceptual map of Floor 2: The Corporate Offices.</em>
 </p>
@@ -109,11 +109,6 @@ I am proud to have successfully completed the "Blueprint Scripting" course and e
 ---
 
 ## 📸 Development Screenshots (Completed Project)
-
-
-<img width="2560" height="1392" alt="HighresScreenshot00005" src="" />
-
-
 
 
 <p align="center">
