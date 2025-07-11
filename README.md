@@ -110,18 +110,17 @@ I am proud to have successfully completed the "Blueprint Scripting" course and e
 
 ## 📸 Development Screenshots (Completed Project)
 
-
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/23662322-1e44-43a3-b4c0-fe230c8dcfaf" alt="Storage Room Screenshot" width="80%"/>
+  <img src="https://github.com/user-attachments/assets/b44c2bf1-9038-4375-85f5-a1dac829a075" alt="Storage Room Screenshot" width="80%"/>
   <br/>
-  <img src="https://github.com/user-attachments/assets/d41b3fc1-f2c6-48bd-b8ba-df7767ba3736" alt="'Power On' Event Screenshot" width="45%"/>
-  <img src="https://github.com/user-attachments/assets/05990c2c-efe0-4f84-8d31-515faee9f002" width="45%"/>
+  <img src="https://github.com/user-attachments/assets/a27fe258-21d8-4da3-a433-f61e6fe3b083" alt="'Power On' Event Screenshot" width="45%"/>
+  <img src="https://github.com/user-attachments/assets/8cbfa87c-a41e-4f9e-88b2-4b846312a190" width="45%"/>
   <br/>
-  <img src="https://github.com/user-attachments/assets/bf9bdbc3-1d9c-4659-838c-bd5be3023b30" alt="Automated Elevator Screenshot" width="45%"/>
-  <img src="https://github.com/user-attachments/assets/3967cd0c-eab3-49c2-9a3c-632d210171ed" alt="Final Objective Screenshot" width="45%"/>
+  <img src="https://github.com/user-attachments/assets/d4733694-f613-4bd3-b218-c690e9cbbf94" alt="Automated Elevator Screenshot" width="45%"/>
+  <img src="https://github.com/user-attachments/assets/06179296-eaab-4dec-bcf2-c49c6619bab7" alt="Final Objective Screenshot" width="45%"/>
   <br/>
-  <img src="https://github.com/user-attachments/assets/326a989a-ec5d-48f7-aaba-3e9443aba9ce" alt="Automated Elevator Screenshot" width="45%"/>
-  <img src="https://github.com/user-attachments/assets/381ee507-f7e7-4649-bba4-a4d9ae3b55a8" alt="Final Objective Screenshot" width="45%"/>
+  <img src="https://github.com/user-attachments/assets/25114f5f-c645-46bc-b55b-7060f6c4958d" alt="Automated Elevator Screenshot" width="45%"/>
+  <img src="https://github.com/user-attachments/assets/2ca03b77-4771-42ab-b25b-2f514f1fe5f0" alt="Final Objective Screenshot" width="45%"/>
   <br/>
 </p>
 
