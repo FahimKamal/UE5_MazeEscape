@@ -55,7 +55,7 @@ The entire design philosophy, detailed puzzle flow, gameplay mechanics, and narr
 
 <p align="center">
   <!-- TODO: Make sure your GDD pdf is in the repo and update this link if needed! -->
-  <a href="./Game Design Document Blackout Facility.pdf" target="_blank"> 
+  <a href="./GDD - Blackout Facility.pdf" target="_blank"> 
     <strong>View the Full Game Design Document (PDF)</strong>
   </a>
 </p>
