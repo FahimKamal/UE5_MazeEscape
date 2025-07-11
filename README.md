@@ -1,10 +1,10 @@
-# Blackout Facility - Coursera Capstone 🚀
+# Blackout Facility - Coursera Capstone (Project Complete & Certified!) 🏆
 
-[![Unreal Engine](https://img.shields.io/badge/Unreal%20Engine-5.x-blueviolet)](https://www.unrealengine.com/)
-[![Focus](https://img.shields.io/badge/Focus-Blueprint%20Scripting%20&%20Puzzle%20Design-lightgrey)](https://www.google.com/search?q=game+puzzle+design)
+[![Unreal Engine](https://img.shields.io/badge/Unreal%20Engine-5.5.4-blueviolet)](https://www.unrealengine.com/)
+[![Focus](https://img.shields.io/badge/Focus-Blueprint%20Scripting%20&%20Puzzle%20Design-lightgrey)](https://www.google.com/search?q=puzzle+game+design)
 [![Design Type](https://img.shields.io/badge/Design%20Type-First--Person%20Puzzle--Escape-orange)](https://en.wikipedia.org/wiki/Puzzle_video_game)
-[![Coursera Certificate](https://img.shields.io/badge/Coursera-Blueprint%20Scripting%20(Completed)-brightgreen?logo=coursera)](<!-- TODO: Add your certificate verification link here -->)
-[![Status](https://img.shields.io/badge/Status-Project%20Complete-success)](./)
+[![Coursera Certificate](https://img.shields.io/badge/Coursera-Blueprint%20Scripting%20(Certified)-0056D2?logo=coursera)](https://www.coursera.org/learn/blueprint-scripting?specialization=epic-games-game-design-professional-certificate)
+[![Status](https://img.shields.io/badge/Status-Project%20Complete%20&%20Certified-success)](./)
 
 ---
 
@@ -15,18 +15,17 @@
 -->
 
 <p align="center">
-  <!-- TODO: Replace this with your own hero image! A great shot would be the lit-up Central Hub with the active Generator and open Lift Door visible. -->
-  <img src="[YOUR HERO IMAGE URL HERE]" alt="Blackout Facility - Hero Image" width="80%"/>
+  <img src="https://placehold.co/1280x720/001F3F/7FDBFF.png?text=Blackout+Facility\nHero+Image&font=montserrat" alt="Blackout Facility - Hero Image" width="80%"/>
   <br>
-  <em>A representative hero image of the "Blackout Facility" escape room.</em>
+  <em>A representative hero image of the completed "Blackout Facility."</em>
 </p>
 
 <p>
   <br>
+  <em>Playtesting Video of the completed "Blackout Facility" game.</em>
   <!-- TODO: Replace this with a link to YOUR playtesting video once recorded! -->
-  <em>Playtesting Video of the "Blackout Facility" prototype.</em>
   <a href="[YOUR YOUTUBE VIDEO URL HERE]" target="_blank">
-    Watch the Gameplay Showcase on YouTube.
+    Watch the Full Gameplay Showcase on YouTube.
   </a>
 </p>
 
@@ -34,15 +33,19 @@
 
 ## 🎓 Project Context & Motivation
 
-This project, **"Blackout Facility,"** was developed by **Fahim Kamal Ahmed** as the capstone assignment for **Course #4: Blueprint Scripting** of the **[Epic Games Game Design Professional Certificate](https://www.coursera.org/professional-certificates/epic-games-game-design-professional-certificate#courses)**.
+This project, **"Blackout Facility,"** was developed by **Fahim Kamal Ahmed** as the successfully completed capstone assignment for the **[Blueprint Scripting](https://www.coursera.org/learn/blueprint-scripting?specialization=epic-games-game-design-professional-certificate)** course. This is the fourth course in the **[Epic Games Game Design Professional Certificate](https://www.coursera.org/professional-certificates/epic-games-game-design-professional-certificate#courses)** offered on Coursera, for which the certificate has now been earned.
 
-The primary goal was to design and implement a complete, polished game experience driven entirely by a robust, interconnected network of Blueprint systems. The project demonstrates a deep understanding of object-oriented design, event-driven programming, and stateful puzzle mechanics, all while laying the architectural foundation for a more complex stealth game.
+The development focused on building a complete game from the ground up, emphasizing a deep understanding of Blueprint visual scripting. The project was initiated using the **Unreal Engine First-Person Template** and the **SuperGrid Starter Pack** to establish a solid foundation, allowing the core effort to be directed toward designing and implementing a network of complex, interconnected gameplay systems and creating all environmental assets from scratch within the engine.
+
+The primary achievement was translating the conceptual Game Design Document (GDD) into a fully playable, feature-complete puzzle-escape game that showcases robust architecture and a compelling, multi-layered puzzle flow.
 
 ---
 
 ## 🎯 Overview
 
-**"Blackout Facility"** is a first-person puzzle-escape game built in **Unreal Engine 5**. The player awakens in the dark, abandoned storage room of a multi-story industrial facility. Armed only with a flashlight, they must explore the environment, solve a series of interconnected puzzles to restore power, and navigate a complex office floor to retrieve a valuable objective from the final meeting room. The game emphasizes logical problem-solving and environmental awareness, rewarding players with a dramatic, facility-wide transformation upon completing the main puzzle.
+**"Blackout Facility"** is a completed first-person puzzle-escape game built in **Unreal Engine 5**. The player awakens in a dark, abandoned industrial complex and must explore a two-story facility, solve environmental puzzles, restore power, and navigate a series of logical challenges to retrieve a final objective.
+
+Development utilized the standard first-person character controller, with a heavy focus on creating all puzzle logic and interactive systems exclusively with Blueprints. All environmental and prop assets were custom-modeled inside Unreal Engine to create a cohesive greybox aesthetic. This completed project establishes a full gameplay loop from start to finish, built on a well-architected and scalable foundation.
 
 ---
 
@@ -52,79 +55,141 @@ The entire design philosophy, detailed puzzle flow, gameplay mechanics, and narr
 
 <p align="center">
   <!-- TODO: Make sure your GDD pdf is in the repo and update this link if needed! -->
-  <a href="./Game Design Document Blackout Facility.pdf" target="_blank">
+  <a href="./Game Design Document Blackout Facility.pdf" target="_blank"> 
     <strong>View the Full Game Design Document (PDF)</strong>
   </a>
 </p>
 
 ---
 
-## ✨ Key Features & Implemented Systems
+## 🗺️ Level Map Overview
 
-*   **Universal Interaction System (`BPI_Interactable`):** A clean and efficient interaction system built on a Blueprint Interface. Any object in the world can be made interactable, standardizing how the player engages with the environment.
-*   **Advanced Door Mechanics (`BP_Door`):** Doors are complex puzzle elements with multiple states and unlocking mechanisms:
-    *   **Key Unlock:** Consumes a key from the player's inventory to permanently unlock.
-    *   **Timed Pressure Plate:** Unlocks the door for a limited time, creating a timed challenge.
-    *   **Remote Computer Unlock:** Can be unlocked by interacting with a linked `BP_Monitor` terminal.
-*   **Automated Lift System (`BP_Lift` & `BP_LiftDoor`):** A fully automated, two-floor elevator system. The lift intelligently communicates with its dedicated doors, closing them before travel and opening them upon arrival for a seamless and immersive transition between floors.
-*   **Centralized Power & Light Grid (`BP_PowerGenerator`, `BP_LightController`, `BP_LightSource`):**
-    *   The main objective is to find 3 `BP_PowerCell`s to activate the `BP_PowerGenerator`.
-    *   Activating the generator triggers a level-wide event dispatcher.
-    *   A central `BP_LightController` receives this event and commands all individual `BP_LightSource`s to switch from a dark/flickering state to fully powered on, dramatically changing the environment.
-*   **Reactive Electronic Props (`BP_Electronics` Parent Class):** Various props like computer monitors (`BP_Monitor`), keyboards (`BP_Keyboard`), and servers (`BP_Server`) are children of a master `BP_Electronics` class. They all listen for the power-on event and dynamically change their visual state (screens turn on, keys light up, server lights blink to life).
-*   **Object-Oriented Architecture:** The project heavily uses parent classes (`BP_CollectibleItem`, `BP_Electronics`) to create a scalable and easy-to-manage hierarchy of game objects, demonstrating clean, object-oriented design principles.
+Below are the conceptual maps that guided the construction of each floor in the "Blackout Facility."
 
----
+<p align="center">
+  <img src="https://placehold.co/800x600/E8E8E8/333333.png?text=Floor+1+Map\nIndustrial+Zone&font=roboto" alt="Floor 1 Map" width="75%"/>
+  <br>
+  <em>Top-down conceptual map of Floor 1: The Industrial Zone.</em>
+</p>
 
-## 🗺️ The Player's Journey: A Walkthrough
-
-The game is structured across two distinct floors, each with its own theme and set of challenges.
-
-### Floor 1: The Industrial Zone
-The player begins in a dark storage room and must solve a series of non-linear key-and-lock puzzles across four rooms (Storage, Server Room, Office, Weapon Room) to collect three Power Cells. The design offers player agency, with multiple valid paths and a hidden key to reward thorough exploration. The floor culminates in the "Power On" event, a dramatic climax where the entire facility illuminates, granting access to the lift.
-
-### Floor 2: The Corporate Offices
-The atmosphere shifts to a clean, corporate environment. The player explores a general office, a break room, and an assistant's office to find a way into the final, locked Meeting Room. This floor features a critical backtracking puzzle, where the player discovers the meeting room's access password is on a now-powered-on computer back in the Server Room on the first floor, forcing them to use their knowledge of the entire facility to progress. The game concludes when the player retrieves the final objective from the Meeting Room.
+<p align="center">
+  <img src="https://placehold.co/800x600/E8E8E8/333333.png?text=Floor+2+Map\nCorporate+Offices&font=roboto" alt="Floor 2 Map" width="75%"/>
+  <br>
+  <em>Top-down conceptual map of Floor 2: The Corporate Offices.</em>
+</p>
 
 ---
 
-## 🔮 Future Plans: The "Hitman" Evolution
+## ✨ Key Goals & Features (Achieved in Project)
 
-Beyond the course submission, this project was architected as a foundation for a more complex social stealth game, heavily inspired by titles like the *Hitman* series. The goal is to transform this puzzle-escape game into a dynamic, replayable portfolio piece.
+*   **Complex Interconnected Systems:** All major gameplay elements are linked. Activating the Power Generator uses Event Dispatchers to trigger a chain reaction, simultaneously activating the central Light Controller, unlocking the Lift, and powering on all electronic props across the entire facility.
+*   **Object-Oriented Blueprint Architecture:** The project is built on a clean foundation of parent classes (`BP_Electronics`, `BP_CollectibleItem`) and a universal `BPI_Interactable` Blueprint Interface, demonstrating a professional, scalable, and organized approach to development.
+*   **Multi-Stage Puzzle Design:** The game features advanced puzzle mechanics, including a non-linear key-and-lock system on Floor 1 and a major backtracking puzzle on Floor 2 that requires the player to revisit a previous area in a new world state.
+*   **Custom In-Engine Asset Creation:** All environmental and prop assets (desks, chairs, servers, monitors, racks, etc.) were modeled from scratch using Unreal Engine's built-in Modeling Tools, demonstrating self-sufficiency and deep engine knowledge.
+*   **Dynamic Interactive Elements:** Implemented highly functional systems including doors with multiple unlock states (key, timed pressure plate, remote computer), and a fully automated, state-aware elevator system.
+*   **Atmospheric Transformation:** A key feature is the dramatic environmental shift from an oppressive, dark, and tense atmosphere to a brightly lit, clean, and fully revealed facility, providing a powerful sense of progression and reward.
+*   **GDD to Completion Pipeline:** The project successfully translated a detailed Game Design Document into a feature-complete, playable game that was packaged and submitted for the course.
 
-*   **NPC Implementation:** The facility will be populated with three types of NPCs: roaming **Security Guards**, **Technicians** on the industrial floor, and **Corporate Employees** on the office floor.
-*   **Stealth & Disguise System:** The core gameplay will shift to social stealth. The player will need to avoid guards or find/acquire disguises to blend in and access restricted areas.
-*   **Dynamic Objectives:** The final goal will evolve from simply collecting an item to more dynamic scenarios, such as stealing data from a guarded server, or even eliminating a target during the final board meeting.
+---
+
+## 📜 Certificate of Completion - Blueprint Scripting
+
+I am proud to have successfully completed the "Blueprint Scripting" course and earned my certificate!
+
+<p align="center">
+  <img src="https://placehold.co/1000x700/F5F5DC/B8860B.png?text=Certificate+of+Completion\nBlueprint+Scripting&font=playfairdisplay" alt="Certificate for Blueprint Scripting" width="70%"/>
+  <br>
+  <em>Certificate of Completion - Blueprint Scripting.</em>
+  <br>
+  <a href="[YOUR COURSERA VERIFICATION URL HERE]" target="_blank">
+    <strong>Verify Certificate</strong>
+  </a>
+</p>
+
+---
+
+## 📸 Development Screenshots (Completed Project)
+
+<p align="center">
+  <img src="https://placehold.co/600x338/2d2d2d/eeeeee.png?text=Screenshot+1:\nDark+Facility+View&font=roboto" alt="Dark Facility Screenshot" width="45%"/>
+  <img src="https://placehold.co/600x338/2d2d2d/eeeeee.png?text=Screenshot+2:\n'Power+On'+Event&font=roboto" alt="'Power On' Event Screenshot" width="45%"/>
+  <br/>
+  <img src="https://placehold.co/600x338/2d2d2d/eeeeee.png?text=Screenshot+3:\nAutomated+Elevator&font=roboto" alt="Automated Elevator Screenshot" width="45%"/>
+  <img src="https://placehold.co/600x338/2d2d2d/eeeeee.png?text=Screenshot+4:\nFinal+Objective&font=roboto" alt="Final Objective Screenshot" width="45%"/>
+</p>
 
 ---
 
 ## 💻 Technology Stack
 
-*   **Engine:** Unreal Engine 5.x ⚙️
-*   **Architecture & Design Patterns:**
-    *   **Blueprint Inheritance (Object-Oriented):** Master parent classes for items and electronics.
-    *   **Blueprint Interfaces (`BPI_Interactable`):** For a universal interaction system.
-    *   **Event Dispatchers:** For efficient, decoupled communication between major systems.
+*   **Engine:** Unreal Engine 5.5.4 ⚙️
 *   **Core Packages Utilized:**
     *   **Unreal Engine First-Person Template:** Used as the base for player character and movement.
     *   **SuperGrid Starter Pack:** Used for rapid prototyping materials and shapes. ([Marketplace Link](https://www.fab.com/listings/a6ab4843-7c8a-47d1-912c-fc1c3553df23))
 *   **Unreal Engine Features Used:**
-    *   **In-Engine Modeling Tools:** For creating custom static mesh assets.
-    *   Blueprint Visual Scripting (Actors, Actor Components).
-    *   Custom Trace Channels & Collision.
-    *   UMG (for UI prompts).
-    *   Material Editor (for dynamic emissive materials).
+    *   Blueprint Visual Scripting (Actors, Actor Components, Game Mode)
+    *   **In-Engine Modeling Tools** (for all custom environmental assets)
+    *   Blueprint Inheritance & Blueprint Interfaces
+    *   Event Dispatchers
+    *   Custom Trace Channels
+    *   UMG (for UI prompts)
+    *   Material Editor (for dynamic emissive materials)
+    *   Project Packaging/Build System
+*   **Design Document:** [Game Design Document (GDD) for "Blackout Facility"](./Game Design Document Blackout Facility.pdf)
+*   **Course:** [Blueprint Scripting](https://www.coursera.org/learn/blueprint-scripting?specialization=epic-games-game-design-professional-certificate) (Epic Games / Coursera)
 *   **Version Control:**[ GitHub ](https://github.com/FahimKamal/UE5_MazeEscape)
+
+---
+
+## 📊 Project Status (As of July 10, 2025)
+
+*   ✅ **Project Definition & GDD:** Scope defined, GDD drafted and finalized.
+*   ✅ **Architectural Foundation:** All parent classes and interfaces (Interaction, Collectible, Electronics) implemented.
+*   ✅ **Core Systems Implementation:** All major gameplay systems (Doors, Lift, Power/Light Grid) are complete and functional.
+*   ✅ **Level Blockout & Implementation:** Floor 1 and Floor 2 are fully built and populated with their respective puzzles and assets.
+*   ✅ **Full Gameplay Loop:** The game is playable from the starting room to the final objective collection.
+*   ✅ **Playtesting & Iteration:** Final playtesting complete to ensure puzzle flow and system stability.
+*   ✅ **Finalize Project Build:** A packaged build of the project was created.
+*   ✅ **Video Showcase:** Gameplay showcase video recorded and uploaded.
+*   ✅ **Course Project Submitted:** All required materials submitted for course evaluation.
+*   ✅ **Received Course Certificate (July 10, 2025):** Successfully completed the course and earned the certificate.
+*   ---
+*   🎯 **Next Steps:** Further develop this project into a more complete portfolio piece by enhancing details and adding gameplay systems (see "Future Plans").
+
+---
+
+## 🌱 Learning & Development Focus
+
+This project successfully demonstrated proficiency in:
+
+*   **Advanced Blueprinting:** Architecting and scripting a network of complex, interconnected, and stateful gameplay systems from scratch.
+*   **Object-Oriented Design:** Creating a clean, scalable, and maintainable project using a well-defined hierarchy of parent classes and interfaces.
+*   **Full-Cycle Game Design:** Taking a concept from a detailed GDD through system design, level implementation, playtesting, and final packaging.
+*   **In-Engine Asset Creation:** Modeling a complete library of cohesive environmental and prop assets using Unreal Engine's built-in tools.
+*   **Systemic & Puzzle Design:** Crafting a multi-layered puzzle experience that relies on player deduction and a holistic understanding of the game world.
+
+---
+
+## 🔮 Future Plans (Post-Course Development for Portfolio Enhancement)
+
+Now that the course requirements are met, the plan is to further develop this "Blackout Facility" into a more polished and comprehensive portfolio piece, evolving it into a social stealth game.
+
+*   🤖 **NPC Implementation:** Populate the facility with roaming Security Guards, Technicians, and Corporate Employees.
+*   🎭 **Stealth & Disguise System:** Introduce a core mechanic where the player must acquire disguises to blend in and access restricted areas without alerting guards.
+*   🎯 **Dynamic Objectives:** Evolve the end-goal from collecting an item to more complex scenarios like stealing data from a guarded server, or even eliminating a target during the final board meeting.
+*   🎨 **Visual & Audio Polish:** (Long-term) Replace blockout assets with final art, improve lighting and post-processing, and implement a full sound design.
 
 ---
 
 ## 📜 Assets & Attributions
 
+*   **Course:** This project is an assignment for the **[Blueprint Scripting](https://www.coursera.org/learn/blueprint-scripting?specialization=epic-games-game-design-professional-certificate)** course by Epic Games on Coursera.
 *   **Creator (Game Design, Level Design, Blueprint Scripting, 3D Modeling):** Fahim Kamal Ahmed
-*   **Custom 3D Models:** All environmental and prop models (chairs, tables, servers, computers, keyboards, cabinets, racks, etc.) were created by the developer from scratch inside Unreal Engine using the built-in Modeling Tools and primitive shapes. This project is a complete blockout/greybox environment built without external modeling software.
+*   **Custom 3D Models:** All environmental and prop models (chairs, tables, servers, computers, keyboards, cabinets, racks, etc.) were created by the developer from scratch inside Unreal Engine using the built-in Modeling Tools and primitive shapes.
 *   **Third-Party Assets:**
+    *   The **SuperGrid Starter Pack** was used for some base materials and prototyping shapes.
     *   The final "Crystal" objective is a free asset downloaded from an online source.
-    *   This project utilizes the **SuperGrid Starter Pack** for some materials and prototyping shapes.
+    *   The project was built upon the standard **Unreal Engine First-Person Template**.
 
 ---
 
