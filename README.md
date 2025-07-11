@@ -23,9 +23,20 @@
 <p>
   <br>
   <em>Playtesting Video of the completed "Blackout Facility" game.</em>
-  <!-- TODO: Replace this with a link to YOUR playtesting video once recorded! -->
   <a href="https://youtu.be/P9MyNKpGvYM?si=p5N358MyeFH3Fjp5" target="_blank">
     Watch the Full Gameplay Showcase on YouTube.
+  </a>
+</p>
+
+---
+
+## 🎮 Playable Release
+
+Want to jump right in and play the game without downloading the entire project? A packaged PC build is available on the official Releases page!
+
+<p align="center">
+  <a href="https://github.com/FahimKamal/UE5_MazeEscape/releases" target="_blank">
+    <strong>Download the Latest Release Here</strong>
   </a>
 </p>
 
@@ -54,7 +65,6 @@ Development utilized the standard first-person character controller, with a heav
 The entire design philosophy, detailed puzzle flow, gameplay mechanics, and narrative context for "Blackout Facility" are documented in the Game Design Document. This document served as the blueprint for the development process.
 
 <p align="center">
-  <!-- TODO: Make sure your GDD pdf is in the repo and update this link if needed! -->
   <a href="./GDD - Blackout Facility.pdf" target="_blank"> 
     <strong>View the Full Game Design Document (PDF)</strong>
   </a>
